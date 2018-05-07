@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2848406D20A02E5F00B8A767 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848406C20A02E5F00B8A767 /* AppDelegate.m */; };
+		2848407020A02E5F00B8A767 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848406F20A02E5F00B8A767 /* ViewController.m */; };
+		2848407320A02E5F00B8A767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2848407120A02E5F00B8A767 /* Main.storyboard */; };
+		2848407520A02E6200B8A767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2848407420A02E6200B8A767 /* Assets.xcassets */; };
+		2848407820A02E6200B8A767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2848407620A02E6200B8A767 /* LaunchScreen.storyboard */; };
+		2848407B20A02E6200B8A767 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848407A20A02E6200B8A767 /* main.m */; };
+		284840A120A02E7E00B8A767 /* libexbankcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2848408820A02E7E00B8A767 /* libexbankcardios.a */; };
+		284840A220A02E7E00B8A767 /* libbexbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2848408920A02E7E00B8A767 /* libbexbankcard.a */; };
+		284840A320A02E7F00B8A767 /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = 2848408A20A02E7E00B8A767 /* zocr0.lib */; };
+		284840A420A02E7F00B8A767 /* UIAlertController+CardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848408D20A02E7E00B8A767 /* UIAlertController+CardExtend.m */; };
+		284840A520A02E7F00B8A767 /* UIImage+CardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848409020A02E7E00B8A767 /* UIImage+CardExtend.m */; };
+		284840A620A02E7F00B8A767 /* YCCardRectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848409420A02E7E00B8A767 /* YCCardRectManager.m */; };
+		284840A720A02E7F00B8A767 /* YCCardIDInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848409920A02E7E00B8A767 /* YCCardIDInfo.m */; };
+		284840A820A02E7F00B8A767 /* YCIDCardCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848409A20A02E7E00B8A767 /* YCIDCardCaptureController.m */; };
+		284840A920A02E7F00B8A767 /* YCTIDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848409B20A02E7E00B8A767 /* YCTIDCardView.m */; };
+		284840AA20A02E7F00B8A767 /* YCIDCardDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848409E20A02E7E00B8A767 /* YCIDCardDetailController.m */; };
+		284840AB20A02E7F00B8A767 /* YCIDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848409F20A02E7E00B8A767 /* YCIDCardView.m */; };
+		284840AC20A02E7F00B8A767 /* YCTIDCardCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840A020A02E7E00B8A767 /* YCTIDCardCaptureController.m */; };
+		284840AF20A0333800B8A767 /* YCBankCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840AE20A0333800B8A767 /* YCBankCardModel.m */; };
+		284840B220A033A300B8A767 /* YCBankBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840B120A033A300B8A767 /* YCBankBaseViewController.m */; };
+		284840B520A0341800B8A767 /* YCBankCardSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840B420A0341800B8A767 /* YCBankCardSearch.m */; };
+		284840B820A0348000B8A767 /* YCBankCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840B720A0348000B8A767 /* YCBankCardView.m */; };
+		284840BB20A034BE00B8A767 /* YCBankCardDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840BA20A034BE00B8A767 /* YCBankCardDetailViewController.m */; };
+		284840BE20A035F300B8A767 /* YCBankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840BD20A035F300B8A767 /* YCBankCardViewController.m */; };
+		284840C120A0365600B8A767 /* YCScanBankCardBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840C020A0365600B8A767 /* YCScanBankCardBase.m */; };
+		284840C420A037E000B8A767 /* YCScanBankCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 284840C320A037E000B8A767 /* YCScanBankCard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2848406820A02E5F00B8A767 /* scanCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scanCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2848406B20A02E5F00B8A767 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2848406C20A02E5F00B8A767 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2848406E20A02E5F00B8A767 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2848406F20A02E5F00B8A767 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2848407220A02E5F00B8A767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2848407420A02E6200B8A767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2848407720A02E6200B8A767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2848407920A02E6200B8A767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2848407A20A02E6200B8A767 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2848408320A02E7E00B8A767 /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
+		2848408420A02E7E00B8A767 /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		2848408520A02E7E00B8A767 /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
+		2848408620A02E7E00B8A767 /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
+		2848408820A02E7E00B8A767 /* libexbankcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexbankcardios.a; sourceTree = "<group>"; };
+		2848408920A02E7E00B8A767 /* libbexbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbexbankcard.a; sourceTree = "<group>"; };
+		2848408A20A02E7E00B8A767 /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		2848408B20A02E7E00B8A767 /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
+		2848408D20A02E7E00B8A767 /* UIAlertController+CardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+CardExtend.m"; sourceTree = "<group>"; };
+		2848408E20A02E7E00B8A767 /* UIImage+CardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CardExtend.h"; sourceTree = "<group>"; };
+		2848408F20A02E7E00B8A767 /* UIAlertController+CardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+CardExtend.h"; sourceTree = "<group>"; };
+		2848409020A02E7E00B8A767 /* UIImage+CardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CardExtend.m"; sourceTree = "<group>"; };
+		2848409320A02E7E00B8A767 /* YCIDCardCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIDCardCaptureController.h; sourceTree = "<group>"; };
+		2848409420A02E7E00B8A767 /* YCCardRectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCardRectManager.m; sourceTree = "<group>"; };
+		2848409520A02E7E00B8A767 /* YCTIDCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTIDCardView.h; sourceTree = "<group>"; };
+		2848409620A02E7E00B8A767 /* YCTIDCardCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTIDCardCaptureController.h; sourceTree = "<group>"; };
+		2848409720A02E7E00B8A767 /* YCIDCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIDCardView.h; sourceTree = "<group>"; };
+		2848409820A02E7E00B8A767 /* YCIDCardDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIDCardDetailController.h; sourceTree = "<group>"; };
+		2848409920A02E7E00B8A767 /* YCCardIDInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCardIDInfo.m; sourceTree = "<group>"; };
+		2848409A20A02E7E00B8A767 /* YCIDCardCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIDCardCaptureController.m; sourceTree = "<group>"; };
+		2848409B20A02E7E00B8A767 /* YCTIDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTIDCardView.m; sourceTree = "<group>"; };
+		2848409C20A02E7E00B8A767 /* YCCardRectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCardRectManager.h; sourceTree = "<group>"; };
+		2848409D20A02E7E00B8A767 /* YCCardIDInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCardIDInfo.h; sourceTree = "<group>"; };
+		2848409E20A02E7E00B8A767 /* YCIDCardDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIDCardDetailController.m; sourceTree = "<group>"; };
+		2848409F20A02E7E00B8A767 /* YCIDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIDCardView.m; sourceTree = "<group>"; };
+		284840A020A02E7E00B8A767 /* YCTIDCardCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTIDCardCaptureController.m; sourceTree = "<group>"; };
+		284840AD20A0333800B8A767 /* YCBankCardModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBankCardModel.h; sourceTree = "<group>"; };
+		284840AE20A0333800B8A767 /* YCBankCardModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBankCardModel.m; sourceTree = "<group>"; };
+		284840B020A033A300B8A767 /* YCBankBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBankBaseViewController.h; sourceTree = "<group>"; };
+		284840B120A033A300B8A767 /* YCBankBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBankBaseViewController.m; sourceTree = "<group>"; };
+		284840B320A0341800B8A767 /* YCBankCardSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBankCardSearch.h; sourceTree = "<group>"; };
+		284840B420A0341800B8A767 /* YCBankCardSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBankCardSearch.m; sourceTree = "<group>"; };
+		284840B620A0348000B8A767 /* YCBankCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBankCardView.h; sourceTree = "<group>"; };
+		284840B720A0348000B8A767 /* YCBankCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBankCardView.m; sourceTree = "<group>"; };
+		284840B920A034BE00B8A767 /* YCBankCardDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBankCardDetailViewController.h; sourceTree = "<group>"; };
+		284840BA20A034BE00B8A767 /* YCBankCardDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBankCardDetailViewController.m; sourceTree = "<group>"; };
+		284840BC20A035F300B8A767 /* YCBankCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBankCardViewController.h; sourceTree = "<group>"; };
+		284840BD20A035F300B8A767 /* YCBankCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBankCardViewController.m; sourceTree = "<group>"; };
+		284840BF20A0365600B8A767 /* YCScanBankCardBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCScanBankCardBase.h; sourceTree = "<group>"; };
+		284840C020A0365600B8A767 /* YCScanBankCardBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCScanBankCardBase.m; sourceTree = "<group>"; };
+		284840C220A037E000B8A767 /* YCScanBankCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCScanBankCard.h; sourceTree = "<group>"; };
+		284840C320A037E000B8A767 /* YCScanBankCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCScanBankCard.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2848406520A02E5F00B8A767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284840A120A02E7E00B8A767 /* libexbankcardios.a in Frameworks */,
+				284840A220A02E7E00B8A767 /* libbexbankcard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2848405F20A02E5F00B8A767 = {
+			isa = PBXGroup;
+			children = (
+				2848406A20A02E5F00B8A767 /* scanCard */,
+				2848406920A02E5F00B8A767 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2848406920A02E5F00B8A767 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2848406820A02E5F00B8A767 /* scanCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2848406A20A02E5F00B8A767 /* scanCard */ = {
+			isa = PBXGroup;
+			children = (
+				2848408120A02E7E00B8A767 /* YCScanCard */,
+				2848406B20A02E5F00B8A767 /* AppDelegate.h */,
+				2848406C20A02E5F00B8A767 /* AppDelegate.m */,
+				2848406E20A02E5F00B8A767 /* ViewController.h */,
+				2848406F20A02E5F00B8A767 /* ViewController.m */,
+				2848407120A02E5F00B8A767 /* Main.storyboard */,
+				2848407420A02E6200B8A767 /* Assets.xcassets */,
+				2848407620A02E6200B8A767 /* LaunchScreen.storyboard */,
+				2848407920A02E6200B8A767 /* Info.plist */,
+				2848407A20A02E6200B8A767 /* main.m */,
+			);
+			path = scanCard;
+			sourceTree = "<group>";
+		};
+		2848408120A02E7E00B8A767 /* YCScanCard */ = {
+			isa = PBXGroup;
+			children = (
+				2848408220A02E7E00B8A767 /* card_lib */,
+				2848408C20A02E7E00B8A767 /* common */,
+				2848409120A02E7E00B8A767 /* BankCard */,
+				2848409220A02E7E00B8A767 /* IDCard */,
+			);
+			path = YCScanCard;
+			sourceTree = "<group>";
+		};
+		2848408220A02E7E00B8A767 /* card_lib */ = {
+			isa = PBXGroup;
+			children = (
+				2848408320A02E7E00B8A767 /* exbankcardcore.h */,
+				2848408420A02E7E00B8A767 /* commondef.h */,
+				2848408520A02E7E00B8A767 /* exbankcard.h */,
+				2848408620A02E7E00B8A767 /* excards.h */,
+				2848408720A02E7E00B8A767 /* exbankcardcore */,
+				2848408B20A02E7E00B8A767 /* BankCard.h */,
+			);
+			path = card_lib;
+			sourceTree = "<group>";
+		};
+		2848408720A02E7E00B8A767 /* exbankcardcore */ = {
+			isa = PBXGroup;
+			children = (
+				2848408820A02E7E00B8A767 /* libexbankcardios.a */,
+				2848408920A02E7E00B8A767 /* libbexbankcard.a */,
+				2848408A20A02E7E00B8A767 /* zocr0.lib */,
+			);
+			path = exbankcardcore;
+			sourceTree = "<group>";
+		};
+		2848408C20A02E7E00B8A767 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				2848408F20A02E7E00B8A767 /* UIAlertController+CardExtend.h */,
+				2848408D20A02E7E00B8A767 /* UIAlertController+CardExtend.m */,
+				2848408E20A02E7E00B8A767 /* UIImage+CardExtend.h */,
+				2848409020A02E7E00B8A767 /* UIImage+CardExtend.m */,
+				2848409C20A02E7E00B8A767 /* YCCardRectManager.h */,
+				2848409420A02E7E00B8A767 /* YCCardRectManager.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		2848409120A02E7E00B8A767 /* BankCard */ = {
+			isa = PBXGroup;
+			children = (
+				284840BF20A0365600B8A767 /* YCScanBankCardBase.h */,
+				284840C020A0365600B8A767 /* YCScanBankCardBase.m */,
+				284840C220A037E000B8A767 /* YCScanBankCard.h */,
+				284840C320A037E000B8A767 /* YCScanBankCard.m */,
+				284840BC20A035F300B8A767 /* YCBankCardViewController.h */,
+				284840BD20A035F300B8A767 /* YCBankCardViewController.m */,
+				284840AD20A0333800B8A767 /* YCBankCardModel.h */,
+				284840AE20A0333800B8A767 /* YCBankCardModel.m */,
+				284840B020A033A300B8A767 /* YCBankBaseViewController.h */,
+				284840B120A033A300B8A767 /* YCBankBaseViewController.m */,
+				284840B320A0341800B8A767 /* YCBankCardSearch.h */,
+				284840B420A0341800B8A767 /* YCBankCardSearch.m */,
+				284840B620A0348000B8A767 /* YCBankCardView.h */,
+				284840B720A0348000B8A767 /* YCBankCardView.m */,
+				284840B920A034BE00B8A767 /* YCBankCardDetailViewController.h */,
+				284840BA20A034BE00B8A767 /* YCBankCardDetailViewController.m */,
+			);
+			path = BankCard;
+			sourceTree = "<group>";
+		};
+		2848409220A02E7E00B8A767 /* IDCard */ = {
+			isa = PBXGroup;
+			children = (
+				2848409D20A02E7E00B8A767 /* YCCardIDInfo.h */,
+				2848409920A02E7E00B8A767 /* YCCardIDInfo.m */,
+				2848409320A02E7E00B8A767 /* YCIDCardCaptureController.h */,
+				2848409A20A02E7E00B8A767 /* YCIDCardCaptureController.m */,
+				2848409820A02E7E00B8A767 /* YCIDCardDetailController.h */,
+				2848409E20A02E7E00B8A767 /* YCIDCardDetailController.m */,
+				2848409720A02E7E00B8A767 /* YCIDCardView.h */,
+				2848409F20A02E7E00B8A767 /* YCIDCardView.m */,
+				2848409620A02E7E00B8A767 /* YCTIDCardCaptureController.h */,
+				284840A020A02E7E00B8A767 /* YCTIDCardCaptureController.m */,
+				2848409520A02E7E00B8A767 /* YCTIDCardView.h */,
+				2848409B20A02E7E00B8A767 /* YCTIDCardView.m */,
+			);
+			path = IDCard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2848406720A02E5F00B8A767 /* scanCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2848407E20A02E6200B8A767 /* Build configuration list for PBXNativeTarget "scanCard" */;
+			buildPhases = (
+				2848406420A02E5F00B8A767 /* Sources */,
+				2848406520A02E5F00B8A767 /* Frameworks */,
+				2848406620A02E5F00B8A767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = scanCard;
+			productName = scanCard;
+			productReference = 2848406820A02E5F00B8A767 /* scanCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2848406020A02E5F00B8A767 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = scanCard;
+				TargetAttributes = {
+					2848406720A02E5F00B8A767 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 2848406320A02E5F00B8A767 /* Build configuration list for PBXProject "scanCard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2848405F20A02E5F00B8A767;
+			productRefGroup = 2848406920A02E5F00B8A767 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2848406720A02E5F00B8A767 /* scanCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2848406620A02E5F00B8A767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284840A320A02E7F00B8A767 /* zocr0.lib in Resources */,
+				2848407820A02E6200B8A767 /* LaunchScreen.storyboard in Resources */,
+				2848407520A02E6200B8A767 /* Assets.xcassets in Resources */,
+				2848407320A02E5F00B8A767 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2848406420A02E5F00B8A767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284840BE20A035F300B8A767 /* YCBankCardViewController.m in Sources */,
+				284840A420A02E7F00B8A767 /* UIAlertController+CardExtend.m in Sources */,
+				284840B220A033A300B8A767 /* YCBankBaseViewController.m in Sources */,
+				284840A820A02E7F00B8A767 /* YCIDCardCaptureController.m in Sources */,
+				284840C120A0365600B8A767 /* YCScanBankCardBase.m in Sources */,
+				284840AC20A02E7F00B8A767 /* YCTIDCardCaptureController.m in Sources */,
+				284840C420A037E000B8A767 /* YCScanBankCard.m in Sources */,
+				284840A620A02E7F00B8A767 /* YCCardRectManager.m in Sources */,
+				284840A520A02E7F00B8A767 /* UIImage+CardExtend.m in Sources */,
+				2848407020A02E5F00B8A767 /* ViewController.m in Sources */,
+				2848407B20A02E6200B8A767 /* main.m in Sources */,
+				284840BB20A034BE00B8A767 /* YCBankCardDetailViewController.m in Sources */,
+				284840B820A0348000B8A767 /* YCBankCardView.m in Sources */,
+				284840B520A0341800B8A767 /* YCBankCardSearch.m in Sources */,
+				284840AB20A02E7F00B8A767 /* YCIDCardView.m in Sources */,
+				284840A920A02E7F00B8A767 /* YCTIDCardView.m in Sources */,
+				284840AA20A02E7F00B8A767 /* YCIDCardDetailController.m in Sources */,
+				2848406D20A02E5F00B8A767 /* AppDelegate.m in Sources */,
+				284840A720A02E7F00B8A767 /* YCCardIDInfo.m in Sources */,
+				284840AF20A0333800B8A767 /* YCBankCardModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2848407120A02E5F00B8A767 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2848407220A02E5F00B8A767 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2848407620A02E6200B8A767 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2848407720A02E6200B8A767 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2848407C20A02E6200B8A767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2848407D20A02E6200B8A767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2848407F20A02E6200B8A767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48747RTRWH;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = scanCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/scanCard/YCScanCard/card_lib/exbankcardcore",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ulinkbank.ussbaonew.scanCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2848408020A02E6200B8A767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48747RTRWH;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = scanCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/scanCard/YCScanCard/card_lib/exbankcardcore",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ulinkbank.ussbaonew.scanCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2848406320A02E5F00B8A767 /* Build configuration list for PBXProject "scanCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2848407C20A02E6200B8A767 /* Debug */,
+				2848407D20A02E6200B8A767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2848407E20A02E6200B8A767 /* Build configuration list for PBXNativeTarget "scanCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2848407F20A02E6200B8A767 /* Debug */,
+				2848408020A02E6200B8A767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2848406020A02E5F00B8A767 /* Project object */;
+}
